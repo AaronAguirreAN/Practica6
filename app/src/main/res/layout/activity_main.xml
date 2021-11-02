@@ -7,43 +7,82 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/esquerra"
-        android:layout_width="150dp"
+        android:id="@+id/blue"
+        android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginTop="20dp"
-        android:background="@color/colorGray"
-        android:text="AaronAguirre,AaronAguirre,AaronAguirre,AaronAguirre,AaronAguirre,AaronAguirre,AaronAguirre,AaronAguirre"
+        android:background="@color/colorNavy"
+        android:text="30%-50% Aarón Aguirre"
+        android:textColor="@color/colorWhite"
+        android:gravity="center"
+        android:textSize="15sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.08"/>
+        app:layout_constraintWidth_percent="0.5"
+        app:layout_constraintHeight_percent="0.3"/>
     <TextView
-        android:id="@+id/dreta"
-        android:layout_width="150dp"
+        android:id="@+id/taronja"
+        android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginTop="20dp"
-        android:background="@color/colorSilver"
-        android:text="AaronAguirre,AaronAguirre,AaronAguirre"
-        app:layout_constraintStart_toStartOf="parent"
+        android:background="@color/colorOrange"
+        android:gravity="center"
+        android:text="20%-50% Aarón Aguirre"
+        android:textColor="@color/colorWhite"
+        android:textSize="15sp"
+        app:layout_constraintHeight_percent="0.2"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.92"/>
-    <androidx.constraintlayout.widget.Barrier
-        android:layout_height="wrap_content"
-        android:layout_width="wrap_content"
-        android:id="@+id/muro"
-        app:constraint_referenced_ids="esquerra,dreta"
-        app:barrierDirection="bottom"/>
-    <Button
-        android:id="@+id/boton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:background="@color/colorSilver"
-        android:text="Button"
-        android:textColor="@color/colorBlack"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintWidth_percent="0.5" />
+    <TextView
+        android:id="@+id/olive"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/colorOlive"
+        android:text="25%-50% Aarón Aguirre"
+        android:textColor="@color/colorWhite"
+        android:gravity="center"
+        android:textSize="15sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/muro" />
+        app:layout_constraintTop_toBottomOf="@id/blue"
+        app:layout_constraintWidth_percent="0.5"
+        app:layout_constraintHeight_percent="0.25"/>
+    <TextView
+        android:id="@+id/red"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/colorRed"
+        android:gravity="center"
+        android:text="20%-50% Aarón Aguirre"
+        android:textColor="@color/colorWhite"
+        android:textSize="15sp"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/taronja"
+        app:layout_constraintWidth_percent="0.5" />
+    <TextView
+        android:id="@+id/green"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/colorGreen"
+        android:text="45%-50% Aarón Aguirre"
+        android:textColor="@color/colorWhite"
+        android:gravity="center"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/olive"
+        app:layout_constraintWidth_percent="0.5"
+        app:layout_constraintHeight_percent="0.45"/>
+    <TextView
+        android:id="@+id/purple"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/colorPurple"
+        android:gravity="center"
+        android:text="70%-50% Aarón Aguirre"
+        android:textColor="@color/colorWhite"
+        android:textSize="15sp"
+        app:layout_constraintHeight_percent="0.70"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/red"
+        app:layout_constraintWidth_percent="0.5" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
